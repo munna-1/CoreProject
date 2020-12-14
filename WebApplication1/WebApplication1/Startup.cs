@@ -35,6 +35,24 @@ namespace WebApplication1
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+
+
+
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("/munna", async context =>
+                {
+                    await context.Response.WriteAsync("Hello World! Thanks");
+                });
+
+
+
+
+
+            });
         }
     }
 }
