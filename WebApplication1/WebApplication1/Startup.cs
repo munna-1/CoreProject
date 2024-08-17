@@ -41,9 +41,6 @@ namespace WebApplication1
                 });
             });
 
-
-
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
@@ -52,11 +49,6 @@ namespace WebApplication1
                 {
                     await context.Response.WriteAsync("Hello World! Thanks");
                 });
-
-
-
-
-
             });
         }
     }
