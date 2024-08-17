@@ -37,12 +37,9 @@ namespace WebApplication1
 
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World 2!");
+                    await context.Response.WriteAsync("Hello World , Amazing!");
                 });
             });
-
-
-
 
             app.UseRouting();
 
@@ -52,11 +49,6 @@ namespace WebApplication1
                 {
                     await context.Response.WriteAsync("Hello World! Thanks");
                 });
-
-
-
-
-
             });
         }
     }
